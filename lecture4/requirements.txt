@@ -1,0 +1,5 @@
+scipy
+sklearn
+gensim
+tensorflow
+keras
