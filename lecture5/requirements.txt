@@ -1,0 +1,4 @@
+mpld3
+seaborn
+scipy
+lda
