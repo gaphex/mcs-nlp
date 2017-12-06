@@ -1,0 +1,10 @@
+URL: "https://speech.googleapis.com/v1/speech:recognize"
+KEY: "YOUR GSR KEY THERE"
+TIMEOUT: null
+CONFIG:
+  encoding: "LINEAR16"
+  maxAlternatives: 0
+  profanityFilter: False
+  languageCode: "ru"
+  enableWordTimeOffsets: False
+  sampleRateHertz: 16000
