@@ -1,0 +1,5 @@
+aiohttp==2.3.6
+requests==2.9.1
+async_timeout==2.0.0
+beautifulsoup4==4.6.0
+PyYAML==3.12

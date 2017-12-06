@@ -8,7 +8,7 @@ import numpy as np
 import async_timeout
 import subprocess
 
-from config import DL_DIR, GSR_CONFIG
+from config import DL_DIR, FFMPEG_PATH
 from scipy.io import wavfile
 
 gsr_params = yaml.load(open("gsr_config.yml"))
@@ -58,7 +58,7 @@ async def google_transcribe(wav, asr_options):
 
 def convert_to_wav16b16k(in_filename, out_filename):
 
-    command = ['ffmpeg','-i', in_filename,'-ar', '16000', out_filename]
+    command = [FFMPEG_PATH,'-i', in_filename,'-ar', '16000', out_filename]
     proc = subprocess.run(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
     return out_filename
